@@ -96,7 +96,7 @@ class TransaksiController extends Controller
     {
         $transaksi = Transaksi::with(['detailTransaksi.menu', 'user'])->findOrFail($id);
         
-        // Cek akses: admin bisa lihat semua, kasir hanya transaksinya sendiri
+        // Cek akses admin dan pegawai
         if (Auth::user()->role != 'admin' && $transaksi->user_id != Auth::id()) {
             abort(403, 'Anda tidak memiliki akses ke transaksi ini');
         }
