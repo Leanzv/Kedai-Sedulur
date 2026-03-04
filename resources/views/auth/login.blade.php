@@ -307,7 +307,7 @@
                         </div>
 
                         <button type="submit" class="btn-login">
-                            <i class="bi bi-box-arrow-in-right"></i> Login Sekarang
+                            <i class="bi bi-box-arrow-in-right"></i> Login
                         </button>
                     </form>
 
